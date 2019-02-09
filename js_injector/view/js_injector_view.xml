@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+  <data>
+      <record id="js_injector_form_view" model="ir.ui.view">
+          <field name="name">js.injector.form</field>
+          <field name="model">js.injector</field>
+          <field name="arch" type="xml">
+              <form string="JS Injector">
+                <group>
+                    <field name="active"/>
+                </group>
+                <separator/>
+                  <group>
+                      <field name="name"/>
+                  </group>
+                  <separator/>
+                  <group>
+                      <field name="groups" widget="many2many_tags"/>
+                  </group>
+                  <separator/>
+                  <group>
+                      <field name="js" widget="ace" options="{'mode': 'javascript'}"/>
+                  </group>
+              </form>
+          </field>
+      </record>
+      <!--group_js list view-->
+      <record id="js_injector_tree_view" model="ir.ui.view">
+          <field name="name">js.injector.list</field>
+          <field name="model">js.injector</field>
+          <field name="arch" type="xml">
+              <tree string="JS Injector">
+                  <field name="name"/>
+                  <field name="groups"/>
+                  <field name="js"/>
+              </tree>
+          </field>
+      </record>
+
+      <record id="action_js_injector" model="ir.actions.act_window">
+        <field name="name">JS Injector</field>
+        <field name="res_model">js.injector</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+        <field name="search_view_id" eval="False"/>
+        <field name="context">{}</field>
+        <field name="help">customize the group here</field>
+      </record>
+      <menuitem name="JS Injector" id="base.js_injector" parent="base.menu_administration" sequence="6" />
+      <menuitem action="action_js_injector" id="menu_action_js_injector" parent="base.js_injector" sequence="20" />
+  </data>
+</odoo>
