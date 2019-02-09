@@ -1,10 +1,14 @@
-# Lead-History
+# JS Injector
 
-1. You can fecth the history of a lead, means when update that lead and which field updated.
-2. Through this we can fetch all previous value of a perticular field of a lead.
-3. We can also print that lead history as a report.
+This module use for impliment the javascript , whatever javascript enter by the admin for the group or
+assign to the group , the javascript impliment to the user of the group . When the user login , the
+javascript apply to the user.
 
-Functionality
-==============
-1. You can get all history of lead in Report section of Sales menu.
-Sales > Report > Lead History.
+
+JS Injector Setup From JS Injector Menu
+=======================================
+You can add multiple group to a perticular js record and the javascript will execute to the user of group. Also you have to active the js record for execute.
+
+JS Injector Setup From Group
+============================
+You can add multiple JS to a perticular group ans all js will execute simultaneously.
