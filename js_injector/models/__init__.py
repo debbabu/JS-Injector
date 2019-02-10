@@ -1,4 +1,3 @@
 # -*- coding: utf-8 -*-
 
-import js_injector
-import res_users
+from . import js_injector, res_users

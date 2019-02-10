@@ -19,12 +19,12 @@
                   </group>
                   <separator/>
                   <group>
-                      <field name="js" widget="ace" options="{'mode': 'javascript'}"/>
+                      <field name="js" widget="ace" />
                   </group>
               </form>
           </field>
       </record>
-      <!--group_js list view-->
+      <!--js_injector list view-->
       <record id="js_injector_tree_view" model="ir.ui.view">
           <field name="name">js.injector.list</field>
           <field name="model">js.injector</field>

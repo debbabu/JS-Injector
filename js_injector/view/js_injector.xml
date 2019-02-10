@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
     <data>
-        <template id="menu_secondary" name="js.injector menu"  inherit_id="web.assets_common">
+        <template id="menu_secondary" name="JS Injector"  inherit_id="web.assets_backend">
            <xpath expr="." position="inside">
               <script type="text/javascript" src="/js_injector/static/src/js/jsinjector.js"></script>
            </xpath>
