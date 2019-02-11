@@ -14,7 +14,7 @@ class JSInjector(models.Model):
 
     name = fields.Char('Purpose', required=True, select=1)
     js = fields.Text('Javascript',required=False, index=False,store=True)
-    active = fields.Boolean('Active')
+    active = fields.Boolean('Active', default=True)
     groups = fields.Many2many('res.groups', 'groups_group_js', 'group_js_id', 'group_id', track_visibility='onchange' , string='Groups')
 
     _sql_constraints = [
