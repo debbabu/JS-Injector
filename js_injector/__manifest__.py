@@ -10,7 +10,7 @@ This module use for impliment the javascript , whatever javascript enter by the 
 assign to the group , the javascript impliment to the user of the group . When the user login , the
 javascript apply to the user.
     """,
-    'author': "Debasisa Dash",
+    'author': "Debasish Dash",
     'website': "http://www.debweb.com",
     'category': 'Tools',
     'version': '0.1',
